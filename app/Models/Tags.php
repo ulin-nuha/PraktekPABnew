@@ -10,6 +10,6 @@ class Tags extends Model
 
     public function tags()
     {
-        return $this->belongsToMany(post::class);
+        return $this->belongsToMany(related: Tags::class);
     }
 }
